@@ -51,7 +51,7 @@ const Navbar = () => {
         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
       {nav && (
-        <ul className=" flex  flex-col  justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-gray-800 to-black ">
+        <ul className=" flex  flex-col  justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 ">
           {links.map(({ id, link }) => (
             <li
               key={id}

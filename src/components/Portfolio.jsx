@@ -1,13 +1,34 @@
 import React from "react";
-import PortfolioNode from "../assets/portfolio/installNode.jpg";
+import TaskTicker1 from "../assets/portfolio/taskticker1.png";
+import Nexusnews1 from "../assets/portfolio/Nexusnews1.png";
+import Figma from "../assets/portfolio/Flashcard.png";
+import Cybernerd from "../assets/portfolio/Cybernerd.png";
 const Portfolio = () => {
   const Portfolios = [
-    { id: 1, src: PortfolioNode },
-    { id: 2, src: PortfolioNode },
-    { id: 3, src: PortfolioNode },
-    { id: 4, src: PortfolioNode },
-    { id: 5, src: PortfolioNode },
-    { id: 6, src: PortfolioNode },
+    {
+      id: 1,
+      src: TaskTicker1,
+      demo: "https://panth1823.github.io/Task_Ticker/",
+      code: "https://github.com/Panth1823/Task_Ticker",
+    },
+    {
+      id: 2,
+      src: Nexusnews1,
+      demo: "https://panth1823.github.io/Project1/",
+      code: "https://github.com/Panth1823/NexusNews",
+    },
+    {
+      id: 3,
+      src: Cybernerd,
+      demo: "https://panth1823.github.io/CyberNerd/",
+      code: "https://github.com/Panth1823/CyberNerd",
+    },
+    {
+      id: 4,
+      src: Figma,
+      demo: "https://www.figma.com/community/file/1261523555389492698",
+      code: "https://github.com/Panth1823/Project1",
+    },
   ];
   return (
     <div
@@ -22,8 +43,8 @@ const Portfolio = () => {
           <p className=" py-6">Check out some of my work right here</p>
         </div>
 
-        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {Portfolios.map(({ id, src }) => (
+        <div className=" grid sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-2 gap-8 px-12 sm:px-0">
+          {Portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className=" shadow-md shadow-gray-300 rounded-lg">
               <img
                 className=" rounded-md duration-200 hover:scale-105"
@@ -34,12 +55,16 @@ const Portfolio = () => {
                 <button
                   className=" w-1/2 px-6
                py-3 m-4 duration-200 hover:scale-105"
+                  onClick={() => (window.location.href = demo)}
                 >
                   Demo
                 </button>
                 <button
                   className=" w-1/2 px-6
                py-3 m-4 duration-200 hover:scale-105"
+                  onClick={() => (window.location.href = code)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Code
                 </button>
