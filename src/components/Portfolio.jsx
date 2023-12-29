@@ -1,7 +1,7 @@
 import React from "react";
 import TaskTicker1 from "../assets/portfolio/taskticker1.png";
-import Nexusnews1 from "../assets/portfolio/Nexusnews1.png";
-import Figma from "../assets/portfolio/Flashcard.png";
+import Nexusnews1 from "../assets/portfolio/Nexusnews.png";
+import Figma from "../assets/portfolio/Figma.png";
 import Cybernerd from "../assets/portfolio/Cybernerd.png";
 const Portfolio = () => {
   const Portfolios = [
@@ -14,7 +14,7 @@ const Portfolio = () => {
     {
       id: 2,
       src: Nexusnews1,
-      demo: "https://panth1823.github.io/Project1/",
+      demo: "https://github.com/Panth1823/NexusNews",
       code: "https://github.com/Panth1823/NexusNews",
     },
     {
@@ -27,7 +27,7 @@ const Portfolio = () => {
       id: 4,
       src: Figma,
       demo: "https://www.figma.com/community/file/1261523555389492698",
-      code: "https://github.com/Panth1823/Project1",
+      code: "https://github.com/Panth1823/HabitHub",
     },
   ];
   return (
@@ -35,7 +35,7 @@ const Portfolio = () => {
       name="portfolio"
       className=" bg-gradient-to-b from-black via-black to-gray-800 w-full md:h-screen text-white "
     >
-      <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className=" max-w-screen-lg p-4 pt-16 mx-auto flex flex-col justify-center w-full h-full">
         <div className=" pb-8">
           <p className=" text-4xl font-bold inline border-b-4 border-gray-500 ">
             Portfolio
