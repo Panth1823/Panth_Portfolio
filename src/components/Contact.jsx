@@ -8,15 +8,15 @@ const Contact = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
   const validateForm = (e) => {
-    e.preventDefault();
-
     if (!form.name || !form.email || !form.message) {
       enqueueSnackbar("All fields are required!", { variant: "error" });
+      e.preventDefault();
       return;
     }
 
     if (!/\S+@\S+\.\S+/.test(form.email)) {
       enqueueSnackbar("Email address is invalid!", { variant: "error" });
+      e.preventDefault();
       return;
     }
   };
