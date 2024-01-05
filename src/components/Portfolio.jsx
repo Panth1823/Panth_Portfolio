@@ -10,24 +10,35 @@ const Portfolio = () => {
       src: TaskTicker1,
       demo: "https://panth1823.github.io/Task_Ticker/",
       code: "https://github.com/Panth1823/Task_Ticker",
+      name: "Task Ticker",
+      description: "A React-powered, feature-rich todo list app",
     },
     {
       id: 2,
       src: Nexusnews1,
       demo: "https://github.com/Panth1823/NexusNews",
       code: "https://github.com/Panth1823/NexusNews",
+      name: "Nexusnews",
+      description:
+        "Delivers real-time updates and personalized news with an intuitive interface",
     },
     {
       id: 3,
       src: Cybernerd,
       demo: "https://panth1823.github.io/CyberNerd/",
       code: "https://github.com/Panth1823/CyberNerd",
+      name: "Cybernerd",
+      description:
+        "A modern blog website with a sleek UI/UX design",
     },
     {
       id: 4,
       src: Figma,
       demo: "https://www.figma.com/community/file/1261523555389492698",
       code: "https://github.com/Panth1823/HabitHub",
+      name: "HabitHub",
+      description:
+        "A productivity app for cultivating positive routines and boosting productivity effortlessly.",
     },
   ];
   return (
@@ -40,34 +51,38 @@ const Portfolio = () => {
           <p className=" text-4xl font-bold inline border-b-4 border-gray-500 ">
             Portfolio
           </p>
-          <p className=" py-6">Check out some of my work right here</p>
+          <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className=" grid sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-2 gap-8 px-12 sm:px-0">
-          {Portfolios.map(({ id, src, demo, code }) => (
-            <div key={id} className=" shadow-md shadow-gray-300 rounded-lg">
-              <img
-                className=" rounded-md duration-200 hover:scale-105"
-                src={src}
-                alt="node"
-              />
-              <div className="flex items-center justify-center">
-                <button
-                  className=" w-1/2 px-6
-               py-3 m-4 duration-200 hover:scale-105"
-                  onClick={() => (window.location.href = demo)}
-                >
-                  Demo
-                </button>
-                <button
-                  className=" w-1/2 px-6
-               py-3 m-4 duration-200 hover:scale-105"
-                  onClick={() => (window.location.href = code)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Code
-                </button>
+        <div className=" z-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-10 px-9 sm:px-0">
+          {Portfolios.map(({ id, src, demo, code, name, description }) => (
+            <div key={id} className="card w-80 glass">
+              <figure>
+                <img
+                  src={src}
+                  alt="portfolio item"
+                  className=" hover:scale-105 duration-300"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title p-1 text-xl">{name}</h2>
+                <p className=" p-1 text-sm">{description}</p>
+                <div className="card-actions justify-between p-2 pt-2">
+                  <button
+                    className="btn bg-gradient-to-r from-cyan-500 to-blue-500  text-white w-24 text-base  hover:scale-105 duration-100"
+                    onClick={() => (window.location.href = demo)}
+                  >
+                    Demo
+                  </button>
+                  <button
+                    className="btn bg-gradient-to-r from-cyan-500 to-blue-500  text-white w-24 text-base hover:scale-105 duration-100"
+                    onClick={() => (window.location.href = code)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Code
+                  </button>
+                </div>
               </div>
             </div>
           ))}
