@@ -1,7 +1,7 @@
 import React from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import Tanjiro from "../assets/panth1.jpeg";
+import Profile from "../assets/panth1.jpeg";
 
 const Home = () => {
   return (
@@ -36,7 +36,7 @@ const Home = () => {
         </div>
         <div>
           <img
-            src={Tanjiro}
+            src={Profile}
             alt="Profile "
             className=" rounded-2xl mx-auto w-72  md:full hover:scale-110 duration-300"
           />
