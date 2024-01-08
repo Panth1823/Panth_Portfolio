@@ -15,17 +15,15 @@ const Home = () => {
             I'm a FrontEnd Developer
           </h2>
           <p className=" text-gray-300 py-4 max-w-md">
-            Passionate web developer and designer specializing in responsive web
-            development, with a focus on React. Committed to innovation,
-            collaboration, and staying current with industry trends. Known for
-            creating visually stunning and seamless web experiences. Seeking
-            opportunities to contribute expertise and creativity to dynamic
-            projects.
+            Passionate frontend web developer and aspiring fullstack
+            developer/designer, dedicated to responsive web development with a
+            focus on React. Committed to innovation, collaboration, and staying
+            current with industry trends.
           </p>
           <div>
             <Link
               to="portfolio"
-              className=" group  text-white w-fit px-5 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500  cursor-pointer  scroll-smooth duration-500"
+              className=" group  text-white w-fit px-5 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500  cursor-pointer scroll-smooth duration-300 hover:scale-105 "
             >
               Portfolio
               <span className=" group-hover:rotate-90 duration-300 ml-1">

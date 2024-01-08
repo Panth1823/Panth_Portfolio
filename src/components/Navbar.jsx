@@ -30,7 +30,11 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-14 text-white  bg-black fixed px-4  bg-transparent backdrop-blur-md z-50">
       <div>
-        <img src={logo} alt="logo" className=" w-28" />
+        <img
+          src={logo}
+          alt="logo"
+          className=" w-28 cursor-pointer hover:scale-105 duration-200"
+        />
       </div>
       <ul className=" hidden md:flex ">
         {links.map(({ id, link }) => (

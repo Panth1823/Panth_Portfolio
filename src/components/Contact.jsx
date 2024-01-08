@@ -20,7 +20,6 @@ const Contact = () => {
       return;
     }
   };
-
   return (
     <div
       name="contact"
@@ -38,7 +37,7 @@ const Contact = () => {
           <form
             action="https://getform.io/f/b9c13577-b220-4061-93c4-92854778546f"
             method="POST"
-            className=" flex flex-col w-full md:w-1/2"
+            className=" flex flex-col w-full md:w-1/2 "
             onSubmit={validateForm}
           >
             <input
