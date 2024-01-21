@@ -2,7 +2,7 @@ import React from "react";
 import TaskTicker1 from "../assets/portfolio/taskticker1.png";
 import Nexusnews1 from "../assets/portfolio/Nexusnews.png";
 import Figma from "../assets/portfolio/Figma.png";
-import Cybernerd from "../assets/portfolio/Cybernerd.png";
+import Koios from "../assets/portfolio/Koios.png"
 const Portfolio = () => {
   const Portfolios = [
     {
@@ -24,12 +24,12 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: Cybernerd,
-      demo: "https://panth1823.github.io/CyberNerd/",
-      code: "https://github.com/Panth1823/CyberNerd",
-      name: "Cybernerd",
+      src: Koios,
+      demo: "https://frontend-assignment-koios.vercel.app/",
+      code: "https://github.com/Panth1823/Koios_Frontend_Assignment",
+      name: "Koios Clone",
       description:
-        "A modern blog website with a sleek UI/UX design",
+        "A modern website clone which was a Front End Developer Internship Assignment",
     },
     {
       id: 4,
@@ -40,6 +40,7 @@ const Portfolio = () => {
       description:
         "A productivity app for cultivating positive routines and boosting productivity effortlessly.",
     },
+
   ];
   return (
     <div
@@ -54,7 +55,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className=" z-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-10 px-9 sm:px-0">
+        <div className="z-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-10 px-9 sm:px-0 justify-items-center">
           {Portfolios.map(({ id, src, demo, code, name, description }) => (
             <div key={id} className="card w-80 glass">
               <figure>

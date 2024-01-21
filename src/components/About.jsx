@@ -12,12 +12,12 @@ const About = () => {
             About Me
           </p>
         </div>
-        <p className="  text-2xl mt-20 tracking-wide leading-relaxed justify-between p-1">
-        👋 Hello, I'm Panth Shah, a results-driven web developer with a passion for crafting seamless and visually stunning digital experiences. Proficient in HTML, CSS, and JavaScript. 💻✨
+        <p className="  text-2xl mt-20 tracking-wide leading-relaxed justify-between p-1 tex">
+        Hello, I'm Panth Shah, a results-driven web developer with a passion for crafting seamless and visually stunning digital experiences. Proficient in HTML, CSS, and JavaScript. 
         </p>
         <br />
         <p className=" text-2xl  pt-2 tracking-wide leading-relaxed justify-between p-1">
-        🚀 I leverage my knowledge in React and Tailwind CSS to bring ideas to life, creating dynamic and responsive web applications. Join me on this journey of technology and design convergence.🌐🎨
+        I leverage my knowledge in React and Tailwind CSS to bring ideas to life, creating dynamic and responsive web applications. Join me on this journey of technology and design convergence.
         </p>
       </div>
     </div>
