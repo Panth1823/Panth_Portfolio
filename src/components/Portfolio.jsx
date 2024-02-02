@@ -2,7 +2,7 @@ import React from "react";
 import TaskTicker1 from "../assets/portfolio/taskticker1.png";
 import Nexusnews1 from "../assets/portfolio/Nexusnews.png";
 import Figma from "../assets/portfolio/Figma.png";
-import Koios from "../assets/portfolio/Koios.png"
+import Koios from "../assets/portfolio/Koios.png";
 const Portfolio = () => {
   const Portfolios = [
     {
@@ -40,7 +40,6 @@ const Portfolio = () => {
       description:
         "A productivity app for cultivating positive routines and boosting productivity effortlessly.",
     },
-
   ];
   return (
     <div
@@ -60,6 +59,7 @@ const Portfolio = () => {
             <div key={id} className="card w-80 glass">
               <figure>
                 <img
+                  loading="lazy"
                   src={src}
                   alt="portfolio item"
                   className=" hover:scale-105 duration-300"

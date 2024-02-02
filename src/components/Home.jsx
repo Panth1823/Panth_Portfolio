@@ -34,6 +34,7 @@ const Home = () => {
         </div>
         <div>
           <img
+            loading="lazy"
             src={Profile}
             alt="Profile "
             className=" rounded-2xl mx-auto w-72  md:full hover:scale-110 duration-300"
