@@ -1,8 +1,8 @@
 import React from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import Profile from "../assets/panth1.jpeg";
-
+import Profile from "../assets/panth.jpeg";
+import Image from "./Image";
 const Home = () => {
   return (
     <div
@@ -23,7 +23,8 @@ const Home = () => {
           <div>
             <Link
               to="portfolio"
-              className=" group  text-white w-fit px-5 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500  cursor-pointer scroll-smooth duration-300 hover:scale-105 "
+              smooth={true}
+              className="group text-white w-fit px-5 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer duration-300 hover:scale-105"
             >
               Portfolio
               <span className=" group-hover:rotate-90 duration-300 ml-1">
@@ -33,12 +34,14 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img
-            loading="lazy"
-            src={Profile}
-            alt="Profile "
-            className=" rounded-2xl mx-auto w-72  md:full hover:scale-110 duration-300"
-          />
+          <div className="flex justify-end">
+            <Image
+              loading="lazy"
+              src={Profile}
+              alt="Profile"
+              className="rounded-2xl mx-auto w-72 md:full hover:scale-110 duration-300"
+            />
+          </div>
         </div>
       </div>
     </div>
