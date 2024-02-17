@@ -1,7 +1,7 @@
 import React from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import Profile from "../assets/panth.jpeg";
+import Profile from "../assets/panth.webp";
 import Image from "./Image";
 const Home = () => {
   return (
