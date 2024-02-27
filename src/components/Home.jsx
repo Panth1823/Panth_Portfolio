@@ -34,8 +34,9 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className="flex justify-end">
+          <div className="flex justify-end"cursor="pointer">
             <Image
+            
               loading="lazy"
               src={Profile}
               alt="Profile"

@@ -2,7 +2,7 @@ import React from "react";
 import TaskTicker1 from "../assets/portfolio/taskticker1.png";
 import Nexusnews1 from "../assets/portfolio/Nexusnews.png";
 import Figma from "../assets/portfolio/Figma.png";
-import Koios from "../assets/portfolio/Koios.png";
+import Memester from "../assets/portfolio/memester.jpg";
 const Portfolio = () => {
   const Portfolios = [
     {
@@ -24,12 +24,12 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: Koios,
-      demo: "https://frontend-assignment-koios.vercel.app/",
-      code: "https://github.com/Panth1823/Koios_Frontend_Assignment",
-      name: "Koios Clone",
+      src: Memester,
+      demo: "https://github.com/Panth1823/Memester",
+      code: "https://github.com/Panth1823/Memester",
+      name: "Memester",
       description:
-        "A modern website clone which was a Front End Developer Internship Assignment",
+        "A Meme app that allows users to share and have a good laugh",
     },
     {
       id: 4,

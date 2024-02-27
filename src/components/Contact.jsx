@@ -30,7 +30,7 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
+          <p className="py-6"></p>
         </div>
 
         <div className=" flex justify-center items-center">

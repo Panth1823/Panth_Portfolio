@@ -1,12 +1,26 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        xl: "14px",
+      },
+      height: {
+        10: "40px",
+      },
+
+      transitionDuration: {
+        500: "0.5s",
+      },
+    },
     fontFamily: {
-      signature: "Great Vibes"
+      signature: "Great Vibes",
     },
   },
-  plugins: [require("daisyui")],
-}
+  variants: {
+    extend: {
+      textColor: ["hover"],
+    },
+  },
+  plugins: [require("daisyui"), require("tailwindcss-filters")],
+};
