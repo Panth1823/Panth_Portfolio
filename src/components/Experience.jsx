@@ -1,9 +1,9 @@
 import React from "react";
-import html from "../assets/html.png";
 import css from "../assets/css.png";
+import github from "../assets/github.png";
+import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 
 const Experience = () => {
@@ -49,7 +49,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="bg-gradient-to-b from-gray-800 via-black to-black w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 pt-32 flex flex-col justify-center w-full h-full text-white">
         <div>
