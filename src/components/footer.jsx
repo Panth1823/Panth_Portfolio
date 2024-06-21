@@ -2,7 +2,6 @@ import { Typography } from "@material-tailwind/react";
 
 const SITEMAP = [
   {
-    title: "Company",
     links: ["About Us", "Careers", "Our Team", "Projects"],
   },
 ];
@@ -11,17 +10,17 @@ export default function Footer() {
   return (
     <footer className="relative w-full bg-gray-800 text-white">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto w-full  gap-8 py-12 h-fit ">
           {SITEMAP.map(({ title, links }, key) => (
-            <div key={key} className="w-full">
+            <div key={key} className="w-full flex-row h-fit">
               <Typography
                 variant="small"
                 color="blue-gray"
-                className="mb-4 font-bold uppercase opacity-50"
+                className="font-bold uppercase opacity-50"
               >
                 {title}
               </Typography>
-              <ul className="space-y-1">
+              <ul className="flex flex-row justify-center gap-40">
                 {links.map((link, key) => (
                   <Typography
                     key={key}
@@ -31,7 +30,7 @@ export default function Footer() {
                   >
                     <a
                       href="/"
-                      className="inline-block py-1 pr-2 transition-transform hover:scale-105"
+                      className="inline-block  transition-transform hover:scale-105"
                     >
                       {link}
                     </a>
@@ -89,10 +88,10 @@ export default function Footer() {
               </button>
               <span
                 className="absolute -top-14 left-[50%] -translate-x-[50%] 
-  z-20 origin-left scale-0 px-3 rounded-lg border 
-  border-gray-300 bg-white py-2 text-sm font-bold
-  shadow-md transition-all duration-300 ease-in-out 
-  group-hover:scale-100 text-pink-500"
+                      z-20 origin-left scale-0 px-3 rounded-lg border 
+                      border-gray-300 bg-white py-2 text-sm font-bold
+                      shadow-md transition-all duration-300 ease-in-out 
+                      group-hover:scale-100 text-pink-500"
               >
                 Instagram<span></span>
               </span>
