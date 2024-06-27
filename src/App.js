@@ -8,7 +8,8 @@ import Contact from "./components/Contact";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SnackbarProvider } from "notistack";
 import Footer from './components/footer';
-
+import Cursor from "./components/cursor";
+import Skill from "./components/Skill";
 function App() {
   return (
     <div>
@@ -19,13 +20,15 @@ function App() {
         iconVariant={{ error: "⚠️" }}
       >
         <Navbar />
+        <Cursor />
         <Home />
         <About />
         <Portfolio />
         <SocialsLinks />
         <Experience />
+        <Skill />
         <Contact />
-        <Footer/>
+        <Footer />
         <SpeedInsights />
       </SnackbarProvider>
     </div>

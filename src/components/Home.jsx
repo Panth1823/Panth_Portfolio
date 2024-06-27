@@ -3,6 +3,64 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Profile from "../assets/panth.webp";
 import Image from "./Image";
+import { motion } from "framer-motion";
+
+const HoverRevealButton1 = () => {
+  return (
+    <div className="text-center  w-fit border-r-14 hover:scale-110">
+      <motion.button
+        className="relative text-white font-bold py-2 px-4 rounded-xl shadow-lg border-white backdrop-filter border-2 backdrop-blur-lg bg-opacity-10 border-opacity-50 overflow-hidden"
+        initial="rest"
+        whileHover="hover"
+        animate="rest"
+      >
+        <span
+          className="absolute inset-0 rounded-lg"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(0,128,128,0.8) 0%, rgba(32,201,151,0.5) 50%, rgba(0,128,128,0.8) 100%)",
+            opacity: "0.9",
+          }}
+        ></span>
+        <motion.span
+          className="relative z-10"
+          variants={{
+            rest: { opacity: 1 },
+            hover: { opacity: 0 },
+          }}
+          transition={{ duration: 0, delay: 0.3 }}
+        >
+          Portfolio
+        </motion.span>
+        <motion.span
+          className="absolute inset-0 flex items-center justify-center z-10"
+          variants={{
+            rest: { opacity: 0 },
+            hover: { opacity: 1 },
+          }}
+          transition={{ duration: 0.3, delay: 0.1 }}
+        >
+          Scroll!
+        </motion.span>
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full bg-white z-10"
+          style={{
+            transform: "rotate(90deg)",
+            transformOrigin: "bottom left",
+            width: "200%",
+            height: "200%",
+          }}
+          variants={{
+            rest: { x: "-105%", opacity: 1 },
+            hover: { x: "100%", opacity: 1 },
+          }}
+          transition={{ duration: 0.9 }}
+        />
+      </motion.button>
+    </div>
+  );
+};
+
 const Home = () => {
   return (
     <div
@@ -21,6 +79,8 @@ const Home = () => {
             current with industry trends.
           </p>
           <div>
+            <HoverRevealButton1 />
+
             <Link
               to="portfolio"
               smooth={true}
@@ -34,9 +94,8 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className="flex justify-end"cursor="pointer">
+          <div className="flex justify-end" cursor="pointer">
             <Image
-            
               loading="lazy"
               src={Profile}
               alt="Profile"
