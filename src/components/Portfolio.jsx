@@ -1,21 +1,30 @@
 import React from "react";
 import TaskTicker1 from "../assets/portfolio/taskticker1.png";
-import Nexusnews1 from "../assets/portfolio/Nexusnews.png";
-import Figma from "../assets/portfolio/Figma.png";
-import Memester from "../assets/portfolio/memester.jpg";
+import Nexusnews from "../assets/portfolio/Nexusnews.png";
+import Cartopia from "../assets/portfolio/Cartopia.png";
+import FlashGenie from "../assets/portfolio/Flashgenie.png";
 const Portfolio = () => {
   const Portfolios = [
     {
       id: 1,
-      src: TaskTicker1,
-      demo: "https://panth1823.github.io/Task_Ticker/",
-      code: "https://github.com/Panth1823/Task_Ticker",
-      name: "Task Ticker",
+      src: Cartopia,
+      demo: "https://cartopia-store.vercel.app/",
+      code: "https://github.com/Panth1823/Cartopia",
+      name: "Cartopia",
       description: "A React-powered, feature-rich todo list app",
     },
     {
       id: 2,
-      src: Nexusnews1,
+      src: FlashGenie,
+      demo: "https://flashgenie.vercel.app/",
+      code: "https://github.com/Panth1823/FlashGenie",
+      name: "FlashGenie",
+      description:
+        "A Meme app that allows users to share and have a good laugh",
+    },
+    {
+      id: 3,
+      src: Nexusnews,
       demo: "https://github.com/Panth1823/NexusNews",
       code: "https://github.com/Panth1823/NexusNews",
       name: "Nexusnews",
@@ -23,20 +32,11 @@ const Portfolio = () => {
         "Delivers real-time updates and personalized news with an intuitive interface",
     },
     {
-      id: 3,
-      src: Memester,
-      demo: "https://github.com/Panth1823/Memester",
-      code: "https://github.com/Panth1823/Memester",
-      name: "Memester",
-      description:
-        "A Meme app that allows users to share and have a good laugh",
-    },
-    {
       id: 4,
-      src: Figma,
-      demo: "https://www.figma.com/community/file/1261523555389492698",
-      code: "https://github.com/Panth1823/HabitHub",
-      name: "HabitHub",
+      src: TaskTicker1,
+      demo: "https://panth1823.github.io/Task_Ticker/",
+      code: "https://github.com/Panth1823/Task_Ticker",
+      name: "Task Ticker",
       description:
         "A productivity app for cultivating positive routines and boosting productivity effortlessly.",
     },

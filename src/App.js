@@ -5,10 +5,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SnackbarProvider } from "notistack";
-import Footer from './components/footer';
-
 
 function App() {
   return (
@@ -26,8 +23,6 @@ function App() {
         <SocialsLinks />
         <Experience />
         <Contact />
-        <Footer />
-        <SpeedInsights />
       </SnackbarProvider>
     </div>
   );

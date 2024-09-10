@@ -84,7 +84,6 @@ const ExpandableCard1 = () => {
             </div>
           </div>
         </div>
-
         <AnimatePresence>
           {isExpanded && (
             <motion.div
@@ -118,7 +117,7 @@ const rectangleVariants = {
   animate: (i) => ({
     x: "100%",
     transition: {
-      delay: 0.1 * i, // Staggered delay for each rectangle
+      delay: 0.1 * i,
       duration: 0.5,
       ease: "easeIn",
     },
@@ -162,7 +161,7 @@ const PageTransition = ({ children, isAnimating, setIsAnimating }) => {
     if (isAnimating) {
       timer = setTimeout(() => {
         setIsAnimating(false);
-      }, 1000); // Total duration of the animations
+      }, 1000);
     }
     return () => clearTimeout(timer);
   }, [isAnimating, setIsAnimating]);
@@ -180,10 +179,8 @@ const PageTransition = ({ children, isAnimating, setIsAnimating }) => {
     </>
   );
 };
-
-// Usage in your main App component
 const ExampleLoading = () => {
-  const [isAnimating, setIsAnimating] = useState(true); // Start animation on load
+  const [isAnimating, setIsAnimating] = useState(true);
 
   const handleButtonClick = () => {
     setIsAnimating(true);
@@ -219,7 +216,7 @@ const TypingMachine = ({
       const timeoutId = setTimeout(() => {
         setDisplayedText((prev) => prev + text[currentIndex]);
         setCurrentIndex((prev) => prev + 1);
-      }, speed); // Adjust typing speed for smooth effect
+      }, speed);
 
       return () => clearTimeout(timeoutId);
     } else {
@@ -247,7 +244,7 @@ const TypingMachine = ({
         ))}
         {!isComplete && (
           <motion.span
-            className="animate-blink" // Add Tailwind Config
+            className="animate-blink"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -275,34 +272,6 @@ const ExampleUsageTypingMachine = () => {
   );
 };
 
-// const WordsRotating = () => {
-//   const [index, setIndex] = React.useState(0);
-
-//   React.useEffect(() => {
-//     const interval = setInterval(() => {
-//       setIndex((prevIndex) => (prevIndex + 1) % words.length);
-//     }, 2000); // Change word every 2 seconds
-//     return () => clearInterval(interval);
-//   }, []);
-//   return (
-//     <div className="relative h-20 w-40 overflow-hidden">
-//       <AnimatePresence>
-//         <motion.div
-//           key={index}
-//           initial={{ opacity: 0, y: 50, rotateX: -90 }}
-//           animate={{ opacity: 1, y: 0, rotateX: 0 }}
-//           exit={{ opacity: 0, y: -50, rotateX: 90 }}
-//           transition={{ duration: 0.5 }}
-//           className="absolute inset-0 flex items-center justify-center"
-//         >
-//           <span className="text-4xl font-bold">{words[index]}</span>
-//         </motion.div>
-//       </AnimatePresence>
-//     </div>
-//   );
-// };
-
-// CustomCursor2 Component
 const CustomCursor2 = ({ isVisible }) => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
 
@@ -389,7 +358,6 @@ const CustomCursor2 = ({ isVisible }) => {
   );
 };
 
-// CustomCard2 Component
 const CustomCard2 = ({ onMouseEnter, onMouseLeave }) => {
   return (
     <a
@@ -416,7 +384,6 @@ const CustomCard2 = ({ onMouseEnter, onMouseLeave }) => {
   );
 };
 
-// CustomCursorCard2 Component
 const CustomCursorCard2 = () => {
   const [cursorVisible, setCursorVisible] = useState(false);
 
@@ -441,7 +408,6 @@ const CustomCursorCard2 = () => {
   );
 };
 
-// App Component
 function App() {
   return (
     <>
@@ -465,4 +431,3 @@ function App() {
 }
 
 export default App;
-
