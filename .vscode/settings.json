@@ -1,6 +1,4 @@
 {
-    "cSpell.words": [
-        "Panth",
-        "taskticker"
-    ]
+    "search.useGlobalIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true
 }
