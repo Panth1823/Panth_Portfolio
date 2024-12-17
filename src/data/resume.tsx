@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Frontend Developer and Builder. I love building things explore new and evolving tech. Always a geek.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I’m a BTech CSE grad and a curious front-end developer who loves turning ideas into impactful apps. I’m passionate about creating user-friendly solutions, constantly learning, and growing with every project. I love building stuff and am always looking for new ideas to work on!",
   avatarUrl: "/me.jpg",
   skills: [
     "Html",
