@@ -73,11 +73,11 @@ export const DATA = {
       logoUrl: "",
       start: "March 2024",
       end: "August 2024",
-      description: [
-        "Engineered responsive websites using React, HTML, CSS, and JavaScript, resulting in a 35% increase in user engagement.", 
-        " Implemented version control strategies with Git, boosting team collaboration efficiency by 40% and reducing bug resolution time by 25%.",
-        " Integrated UI and animation libraries to enhance website functionality and aesthetics, leading to a 50% increase in client satisfaction."
-      ],
+      description: `
+        • Engineered responsive websites using React, HTML, CSS, and JavaScript, resulting in a 35% increase in user engagement.
+        • Implemented version control strategies with Git, boosting team collaboration efficiency by 40% and reducing bug resolution time by 25%.
+        • Integrated UI and animation libraries to enhance website functionality and aesthetics, leading to a 50% increase in client satisfaction.
+      `,
     },
   ],
   education: [
@@ -160,7 +160,8 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://res.cloudinary.com/desqrxm8d/video/upload/v1734354292/16.12.2024_18.33.37_REC_vwrash.mp4",
+      video:
+        "https://res.cloudinary.com/desqrxm8d/video/upload/v1734354292/16.12.2024_18.33.37_REC_vwrash.mp4",
     },
   ],
   hackathons: [
@@ -168,8 +169,7 @@ export const DATA = {
       title: "Google Gen AI Exchange Hackathon",
       dates: "Aug 12 - Oct 18, 2024",
       location: "Online",
-      description:
-        "",
+      description: "",
       icon: "public",
       image:
         "https://res.cloudinary.com/dccsybvqx/image/upload/v1735307681/GenAIEX_ek3mff.png",
@@ -201,7 +201,7 @@ export const DATA = {
       dates: "February 13 - 27, 2023",
       location: "Online",
       description:
-        "Built \"LearnTuber\" web app which can convert your free YouTube course video into summarized notes as well as interactive quiz.",
+        'Built "LearnTuber" web app which can convert your free YouTube course video into summarized notes as well as interactive quiz.',
       image:
         "https://res.cloudinary.com/dccsybvqx/image/upload/v1735307681/Skillathon_pl70uq.jpg",
       win: "Best Data Hack",
