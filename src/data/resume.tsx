@@ -1,6 +1,5 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-
 export const DATA = {
   name: "Panth Shah",
   initials: "PS",
@@ -71,17 +70,20 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Frontend Developer Intern",
-      logoUrl: "/atomic.png",
+      logoUrl: "",
       start: "March 2024",
       end: "August 2024",
-      description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+      description: [
+        "Engineered responsive websites using React, HTML, CSS, and JavaScript, resulting in a 35% increase in user engagement.", 
+        " Implemented version control strategies with Git, boosting team collaboration efficiency by 40% and reducing bug resolution time by 25%.",
+        " Integrated UI and animation libraries to enhance website functionality and aesthetics, leading to a 50% increase in client satisfaction."
+      ],
     },
   ],
   education: [
     {
       school: "Parul University",
-      href: "",
+      href: "https://www.paruluniversity.ac.in/",
       degree: "Computer Science and Engineering (AI)",
       logoUrl: "/buildspace.jpg",
       start: "2020",
@@ -89,7 +91,7 @@ export const DATA = {
     },
     {
       school: "Sarvamangal School",
-      href: "",
+      href: "https://www.justdial.com/Vadodara/Sarwa-Mangal-School-Behind-Bright-Cbse-Unit-Near-Airport-Harni/0265PX265-X265-160614142457-T2V6_BZDET",
       degree: "HSC/SSC (PCM)",
       logoUrl: "/waterloo.png",
       start: "2020",
@@ -160,150 +162,60 @@ export const DATA = {
       image: "",
       video: "https://res.cloudinary.com/desqrxm8d/video/upload/v1734354292/16.12.2024_18.33.37_REC_vwrash.mp4",
     },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://res.cloudinary.com/desqrxm8d/video/upload/v1734353805/16.12.2024_18.11.57_REC_lttl0p.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
   ],
   hackathons: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "Google Gen AI Exchange Hackathon",
+      dates: "Aug 12 - Oct 18, 2024",
+      location: "Online",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
+        "",
       icon: "public",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
+        "https://res.cloudinary.com/dccsybvqx/image/upload/v1735307681/GenAIEX_ek3mff.png",
       links: [],
     },
     {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
+      title: "Parul Lets Hack (India Tour)",
+      dates: "July 15 - 16, 2023",
+      location: "Parul University",
       description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
+        "Developed AI-powered flashcard generator built with React , Gemini and Cloudflare Workers. Create and customize quiz content seamlessly for an interactive learning experience",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+        "https://res.cloudinary.com/dccsybvqx/image/upload/v1735307681/PLH_acnkrz.webp",
       links: [
         {
-          title: "Github",
+          title: "",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://flashgenie.vercel.app/",
+        },
+        {
+          title: "",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          href: "https://github.com/Panth1823/FlashGenie",
         },
       ],
     },
     {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
+      title: "Skill-A-Thon 1.0",
+      dates: "February 13 - 27, 2023",
+      location: "Online",
       description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
+        "Built \"LearnTuber\" web app which can convert your free YouTube course video into summarized notes as well as interactive quiz.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
+        "https://res.cloudinary.com/dccsybvqx/image/upload/v1735307681/Skillathon_pl70uq.jpg",
       win: "Best Data Hack",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
       links: [
         {
-          title: "Devpost",
+          title: "",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
+          href: "https://learntuber.vercel.app/",
         },
         {
-          title: "ML",
+          title: "",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
+          href: "https://github.com/Panth1823/LearnTuber",
         },
       ],
     },
