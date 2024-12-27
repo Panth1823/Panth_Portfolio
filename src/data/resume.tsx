@@ -101,7 +101,7 @@ export const DATA = {
   projects: [
     {
       title: "Flashgenie",
-      href: "flashgenie.vercel.app",
+      href: "https://flashgenie.vercel.app/",
       dates: "Oct 2024",
       active: true,
       description:
